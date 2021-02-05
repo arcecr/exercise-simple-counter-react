@@ -6,7 +6,7 @@ const toHours = (seconds) => {
 }
 
 const toMinutes = (seconds) => {
-    const minutes = Math.floor(seconds / 60);
+    const minutes = Math.floor(seconds % 3600 / 60);
     return timeFormatter(minutes);
 }
 
